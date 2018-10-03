@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block title %}
+            <title>Mashriq Trial Task by RAMADAN</title>
+        {% endblock %}
+
+        <!-- META SECTION -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- END META SECTION -->
+        <!-- CSS INCLUDE -->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+        <!-- EOF CSS INCLUDE -->
+    </head>
+    <body>
+
+        <!-- APP WRAPPER -->
+        {% block content %}{% endblock %}
+        <!-- END APP WRAPPER -->
+
+        <!-- IMPORTANT SCRIPTS -->
+        <script type="text/javascript" src="{% static 'js/vendor/jquery/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/jquery/jquery-migrate.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/jquery/jquery-ui.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/bootstrap/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/moment/moment.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/customscrollbar/jquery.mCustomScrollbar.min.js' %}"></script>
+        <!-- APP SCRIPTS -->
+        <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/app_plugins.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/app_demo.js' %}"></script>
+        <!-- END APP SCRIPTS -->
+
+        <script type="text/javascript" src="{% static 'js/app_demo_dashboard.js' %}"></script>
+        <!-- END IMPORTANT SCRIPTS -->
+
+        {% block js_additional %}
+        {% endblock %}
+    </body>
+</html>

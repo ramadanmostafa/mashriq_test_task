@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="block-content">
+        <div class="table-responsive custom-extended-soetable-table margin-bottom-20">
+            <a href="{% url 'add' %}" class="btn btn-success pull-right"  title="ADD" onclick="app.loading('show',{value: [0,100],speed: 5});">
+                <span class="fa fa-plus"></span>&nbsp;&nbsp; ADD New Employee
+            </a><br /><br /><br />
+
+            <table class="table table-head-custom table-striped table-bordered text-center datatable-extended">
+                <thead>
+                    <tr>
+                        <th class="text-center text-uppercase">
+                            FULL NAME
+                        </th>
+                        <th class="text-center text-uppercase">
+                            COUNTRY
+                        </th>
+                        <th class="text-center text-uppercase">
+                            nationality
+                        </th>
+                        <th class="text-center text-uppercase">
+                            date of birth
+                        </th>
+                        <th class="text-center text-uppercase">
+                            place of birth
+                        </th>
+                        <th class="text-center text-uppercase">
+                            marital status
+                        </th>
+                        <th class="text-center text-uppercase">
+                            gender
+                        </th>
+                        <th class="text-center text-uppercase">
+                            created DATE
+                        </th>
+                        <th class="text-center text-uppercase">
+                            ACTIONS
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for emp in employees %}
+                        <tr>
+                            <td>
+                                {{ emp.full_name }}
+                            </td>
+                            <td>
+                                {{ emp.country }}
+                            </td>
+                            <td>
+                                {{ emp.nationality }}
+                            </td>
+                            <td>
+                                {{ emp.date_of_birth }}
+                            </td>
+                            <td>
+                                {{ emp.place_of_birth }}
+                            </td>
+                            <td>
+                                {{ emp.marital_status }}
+                            </td>
+                            <td>
+                                {{ emp.gender }}
+                            </td>
+                            <td>
+                                {{ emp.created }}
+                            </td>
+                            <td>
+                                <a href="{% url 'update' emp.pk %}" class="btn btn-light btn-icon"  data-toggle="tooltip" data-placement="top" title="Edit" onclick="app.loading('show',{value: [0,100],speed: 5});"><span class="fa fa-pencil"></span></a>
+                                <a href="{% url 'delete' emp.pk %}" class="btn btn-light btn-icon"  data-toggle="tooltip" data-placement="top" title="Delete" onclick="app.loading('show',{value: [0,100],speed: 5});"><span class="fa fa-trash"></span></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block js_additional %}
+    <!-- THIS PAGE SCRIPTS -->
+    <script type="text/javascript" src="{% static 'js/vendor/sweetalert/sweetalert.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/datatables/jquery.dataTables.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/datatables/dataTables.bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/bootstrap-select/bootstrap-select.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/select2/select2.full.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/form-validator/jquery.form-validator.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/noty/jquery.noty.packaged.js' %}"></script>
+    <!-- END THIS PAGE SCRIPTS -->
+{% endblock %}

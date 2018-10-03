@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" id="add-car-vehicle-page">
+
+        <div class="row">
+            <!-- Start Add Car Block -->
+            <div class="col-sm-9">
+
+                <!-- START Block -->
+                <div class="block block-condensed">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="submit" class="btn btn-success" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_additional %}
+    <script src="//cdn.bootcss.com/bootstrap-datetimepicker/4.17.44/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script>
+  $(function() {
+    $( ".datepicker" ).datetimepicker({
+      format:'YYYY-MM-DD HH:mm:ss'
+    });
+  });
+  </script>
+{% endblock %}

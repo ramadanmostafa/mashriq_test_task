@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" id="add-car-vehicle-page">
+
+        <div class="row">
+            <!-- Start Add Car Block -->
+            <div class="col-sm-9">
+
+                <!-- START Block -->
+                <div class="block block-condensed">
+                    <form method="post">{% csrf_token %}
+                        <p>Are you sure you want to delete "{{ object.full_name }}"?</p>
+                        <input type="submit" value="Confirm">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,1264 @@
+/*******************
+Custom Template
+*******************/
+
+/***** General *****/
+
+.app .container
+{
+  margin-bottom: 40px
+}
+
+/* Background HighLight */
+
+.bg-highlight
+{
+  background: #f2f2f2
+}
+
+/* Custom Title */
+
+.custom-title .title h3
+{
+  font-size: 20px !important
+}
+
+/* Custom Buttons */
+
+.btn-light
+{
+  background-color: #ff7c3a;
+  color: #fff
+}
+.btn-light:hover,
+.btn-light:hover,
+.btn-light:focus,
+.btn-light.focus
+{
+  background-color: #ee4901;
+  color: #fff
+}
+.btn-dark
+{
+  background-color: #4b97b8;
+  color: #fff
+}
+.btn-dark:hover,
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark.focus
+{
+  background-color: #016988;
+  color: #fff
+}
+.btn span.fa
+{
+  font-size: 15px
+}
+.btn.btn-icon span.fa
+{
+  font-size: 20px
+}
+
+/* Custom Buttons Disabled */
+
+.btn-light-disabled
+{
+  background-color: #ff7c3a;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: .65;
+}
+.btn-light-disabled:hover
+{
+  background-color: #ff7c3a;
+  color: #fff
+}
+.btn-dark-disabled
+{
+  background-color: #4b97b8;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: .65;
+}
+.btn-dark-disabled:hover
+{
+  background-color: #4b97b8;
+  color: #fff;
+}
+
+/* Panel Info Title */
+
+.panel.panel-info .title h3
+{
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600
+}
+
+/* Info Section */
+
+.info-section .panel-info > .panel-heading
+{
+  color: #FFF;
+  background-color: #4FB5DD;
+  border-color: #4FB5DD;
+  line-height: normal
+}
+.info-section .block .filter-item .app-heading .icon
+{
+  margin-right: 5px
+}
+.info-section .block .filter-item .app-heading .icon span
+{
+  font-size: 14px
+}
+
+/* a Links */
+
+a
+{
+  color: #016988
+}
+a.active,
+a:hover,
+body a:hover
+{
+  color: #003e5b;
+  text-decoration: none
+}
+
+/* Custom Icon */
+
+.app .app-heading .icon span
+{
+  line-height: normal
+}
+
+/* Loading Bar */
+
+.app-loading
+{
+  height: 2px;
+  box-shadow: none
+}
+.app-loading .app-loading-progress
+{
+  background: #ee4901;
+  height: 2px
+}
+
+/* Progress Bar */
+
+.progress-bar
+{
+  background-color: #ff7c3a
+}
+
+/* Tables */
+
+.table .app-checkbox, .table .app-radio
+{
+  margin: auto;
+  float: none
+}
+.app-checkbox label, .app-radio label
+{
+  margin: auto;
+  display: inline
+}
+.app .app-heading.title-only .title h2
+{
+  line-height: normal
+}
+.app .app-heading .title h2
+{
+  font-size: 12px
+}
+.app .table tr td,
+.app .table tr th
+{
+  padding: 10px
+}
+.app .table.table-head-custom > thead > tr > th
+{
+  background: #4b97b8
+}
+
+/* Tables Non Border */
+
+.table-non-border.table > tbody > tr > td
+{
+  border-bottom: none;
+  border-top: none
+}
+
+/* custom extended soetable table */
+
+.custom-extended-soetable-table div.dataTables_wrapper div.dataTables_length label,
+.custom-extended-soetable-table div.dataTables_wrapper div.dataTables_info
+{
+  margin-left: 15px
+}
+.custom-extended-soetable-table div.dataTables_wrapper div.dataTables_filter label,
+.custom-extended-soetable-table div.dataTables_wrapper div.dataTables_paginate ul.pagination
+{
+  margin-right: 15px
+}
+
+/* select2 Container */
+
+.select2-container .select2-selection--single .select2-selection__rendered
+{
+  padding-left: 10px
+}
+
+/* select2 List Hover */
+
+.select2-container--default .select2-selection--single:hover,
+.select2-container--default .select2-results__option--highlighted[aria-selected=false]
+{
+  background-color: rgba(255,124,58,0.2)
+}
+
+/* Google Recaptcha Error Message */
+
+#error-captcha
+{
+  color: #F04E51
+}
+
+/* Custom Radio */
+
+.app-radio.custom-radio label
+{
+  color: #454545
+}
+.app-radio.custom-radio label span:before
+{
+  border-color: #ff7c3a
+}
+.app-radio.custom-radio label span:after
+{
+  background: #ff7c3a
+}
+.app-checkbox, .app-radio
+{
+  margin: 6px 0
+}
+
+/* Custom Checkbox */
+
+.app-checkbox.custom-checkbox label
+{
+    color: #454545
+}
+.app-checkbox.custom-checkbox label span:before
+{
+  border-color: #ff7c3a
+}
+.app-checkbox.custom-checkbox label span:after
+{
+  color: #ff7c3a
+}
+
+/* Custom Modal */
+
+.modal .modal-dialog.modal-custom .modal-header
+{
+  background: #ff7c3a;
+  border-top-right-radius: 0;
+    border-top-left-radius: 0
+}
+.modal .modal-dialog.modal-custom .modal-header .modal-title
+{
+  color: #FFF
+}
+
+/* Date Time Picker */
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover,
+.bootstrap-datetimepicker-widget table td span.active,
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker td.in-range
+{
+  background-color: #ee4901
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover,
+.bootstrap-datetimepicker-widget table td.day:hover,
+.bootstrap-datetimepicker-widget table td.hour:hover,
+.bootstrap-datetimepicker-widget table td.minute:hover,
+.bootstrap-datetimepicker-widget table td.second:hover,
+.bootstrap-datetimepicker-widget table td span:hover,
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover
+{
+  background-color: #ff7c3a
+}
+.daterangepicker .input-mini.active
+{
+  border: 1px solid #ee4901
+}
+.range_inputs .applyBtn
+{
+  background-color: #ff7c3a;
+  border-color: #ff7c3a;
+  color: #fff
+}
+.range_inputs .applyBtn:hover,
+.range_inputs .applyBtn:hover,
+.range_inputs .applyBtn:focus,
+.range_inputs .applyBtn.focus
+{
+  background-color: #ee4901;
+  border-color: #ff7c3a;
+  color: #fff
+}
+.range_inputs .cancelBtn
+{
+  background-color: #4b97b8;
+  color: #fff
+}
+.range_inputs .cancelBtn:hover,
+.range_inputs .cancelBtn:hover,
+.range_inputs .cancelBtn:focus,
+.range_inputs .cancelBtn.focus
+{
+  background-color: #016988;
+  color: #fff
+}
+
+/* Pagination */
+
+.app .pagination li.active > a,
+.app .pagination li.active span
+{
+  background: #ff7c3a;
+  border-color: #ff7c3a
+}
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus
+{
+  background-color: #ee4901 !important;
+  border-color: #ee4901
+}
+.app .pagination li > a:hover
+{
+  background-color: rgba(255,124,58,0.2)
+}
+
+/* Block */
+
+.app .block.block-condensed > .block-content
+{
+  padding: 0px 15px;
+}
+
+/* col-md */
+
+@media (max-width: 480px)
+{
+  .app .row div[class^="col-md-"]
+  {
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px
+  }
+}
+@media (max-width: 360px) {
+  body .row > div[class^='col-']
+  {
+    padding-left: 1px;
+    padding-right: 1px
+  }
+  .form-control
+  {
+    padding: 5px
+  }
+}
+
+/***** Header *****/
+
+/* Hidden Color Options */
+
+.app-settings
+{
+  display: none
+}
+
+/*Topbar*/
+
+.app .app-header.app-header-design-default
+{
+  background: #014D63;
+  height: 57px
+}
+.app .app-heading.app-heading-bordered.app-heading-page
+{
+  background: #016988;
+  padding: 5px 15px !important
+}
+.app .app-heading.app-heading-bordered.app-heading-page .icon,
+.app .app-heading.app-heading-bordered.app-heading-page .title h1,
+.app .app-heading.app-heading-bordered.app-heading-page .title p
+{
+  color: #fff
+}
+.app .app-heading.app-heading-bordered.app-heading-page .icon span
+{
+  line-height: 40px
+}
+.app .app-header.app-header-design-default
+{
+  border-bottom: 1px solid #003e5b
+}
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-default,
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-link
+{
+  background: #ff7c3a;
+  color: #003e5b;
+  border-color: #003e5b
+}
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-default,
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-link
+{
+  background: #ff7c3a;
+  color: #003e5b;
+  border-color: #fff;
+  border-radius: 3px
+}
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-default:hover,
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-link:hover
+{
+  background: #ee4901;
+  border-color: #fff
+}
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-default span[class^="icon-"],
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-link span[class^="icon-"],
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-default .fa,
+.app .app-header.app-header-design-default .app-header-buttons .btn.btn-link .fa
+{
+  color: #fff
+}
+.app .app-header .app-header-buttons > li > .contact .contact-container a
+{
+  color: #fff
+}
+.app .app-header .app-header-buttons > li > .contact .contact-container span
+{
+  color: #ff7c3a
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus
+{
+  background-color: rgba(255,124,58,0.2)
+}
+
+/* logo */
+
+.app-navigation.app-navigation-style-default .app-navigation-logo
+{
+  background: url(../img/logo.png) center center no-repeat #F5F5F5;
+  border-right: 1px solid #DBE0E4;
+  padding: 0 1%
+}
+.app-navigation.app-navigation-style-default .app-navigation-logo:hover
+{
+  background: url(../img/logo.png) center center no-repeat #F5F5F5
+}
+.app-navigation .app-navigation-logo
+{
+  height: 107px
+}
+.app-navigation.app-navigation-style-default.app-navigation-minimized .app-navigation-logo:hover
+{
+  background: url(../img/logo-sm.png) center center no-repeat #F5F5F5
+}
+
+/***** Sidebar *****/
+
+.app-navigation.app-navigation-fixed
+{
+  bottom: 0
+}
+.app-navigation.app-navigation-style-default
+{
+  background: #016988
+}
+.app-navigation.app-navigation-style-default nav > ul > li a:hover,
+.app-navigation.app-navigation-style-default nav > ul > li a.active
+{
+  background: #014D63;
+  color: #ff7c3a
+}
+.app-navigation.app-navigation-style-default nav > ul > li a
+{
+  background: #016988
+}
+.app-navigation.app-navigation-style-default nav > ul > li a span,
+.app-navigation.app-navigation-style-default nav > ul > li a
+{
+  color: #fff
+}
+.app-navigation.app-navigation-style-default nav > ul > li.openable.open > a
+{
+  background: #01607C;
+  color: #fff
+}
+.app-navigation.app-navigation-style-default nav > ul > li.openable.open > a span
+{
+  color: #fff
+}
+.app-navigation.app-navigation-style-default nav > ul > li ul > li > a,
+.app-navigation.app-navigation-style-default nav > ul > li:hover ul > li > a
+{
+  background: #015670;
+  color: #fff
+}
+.app-navigation.app-navigation-style-default nav > ul > li:hover ul > li > a span
+{
+  color: #fff
+}
+.app-navigation.app-navigation-style-default nav > ul > li ul > li > a span
+{
+  color: #fff
+}
+.app-navigation.app-navigation-style-default nav > ul > li ul > li > a:hover,
+.app-navigation.app-navigation-style-default nav > ul > li ul > li > a.active
+{
+  background: #014D63
+}
+.app-navigation.app-navigation-style-default nav > ul > li ul > li:hover > a,
+.app-navigation.app-navigation-style-default nav > ul > li ul > li:hover > a span,
+.app-navigation.app-navigation-style-default nav > ul > li ul > li.active > a,
+.app-navigation.app-navigation-style-default nav > ul > li ul > li.active > a span,
+.app-navigation.app-navigation-style-default nav > ul > li:hover a span,
+.app-navigation.app-navigation-style-default nav > ul > li.active a span,
+.app-navigation.app-navigation-style-default nav > ul > li:hover a,
+.app-navigation.app-navigation-style-default nav > ul > li.active a
+{
+  color: #ff7c3a
+}
+.app-navigation.app-navigation-style-default nav > ul > li a.active span
+{
+  color: #ff7c3a
+}
+.app-navigation.app-navigation-style-default nav > ul > li
+{
+  border-bottom: 1px solid #003e5b
+}
+.app-navigation.app-navigation-style-default nav > ul > li.openable > a:after
+{
+  color: #ffffff
+}
+.fleet-icon,
+.uber-icon,
+.reports-icon
+{
+  font-size: 16px !important
+}
+.kit-text
+{
+  text-transform: capitalize;
+  font-style: normal
+}
+
+/***** Footer *****/
+
+#footer
+{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  z-index: 999;
+  float: left;
+  width: 100%
+}
+#footer.app-footer-default,
+#footer.app-footer-default:after
+{
+  background: #014D63;
+  color: #80909A;
+  font-size: 13px
+}
+#footer.app-footer-default a
+{
+    color: #9ca9b1;
+}
+#footer.app-footer-default a:hover
+{
+  color: #fff
+}
+#footer .app-footer-line
+{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+#footer .copyright
+{
+  float: left;
+  line-height: 20px;
+}
+#footer ul.list-inline
+{
+  margin-bottom: 0
+}
+
+/***** Dashboard Page *****/
+
+.custom-widget .sub-intval
+{
+  color: #7F8FA4;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize
+}
+.app .custom-widget .app-widget-tile .title,
+.app .custom-widget .app-widget-tile .subtitle
+{
+  float: none
+}
+.block.chart.total-income,
+.block.chart.total-distance
+{
+  padding-bottom: 120px
+}
+/***** Tracks Page *****/
+
+/* Filter */
+
+.filter-tracks-box
+{
+  display: none
+}
+.filter-tracks-box .filter-item .app-heading .icon span
+{
+  font-size: 14px;
+  color: #1B2431
+}
+@media (max-width: 480px)
+{
+  .filter-input-date-from
+  {
+    padding-left: 0 !important
+  }
+  .filter-input-date-to
+  {
+    padding-right: 0 !important
+  }
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-results__option[aria-selected=true]
+{
+  background-color: #ee4901
+}
+.upgrade-noti-filter-box
+{
+  background: #016988;
+  padding: 5px 20px;
+  overflow: hidden;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+  transition: all 100ms ease-in
+}
+.upgrade-noti-filter-box a
+{
+  color: #FFF;
+  line-height: 18px;
+  text-decoration: none;
+  font-weight: normal
+}
+.upgrade-noti-filter-box:hover a
+{
+  color: #FFF;
+  text-decoration: none
+}
+
+/* Tracks Box */
+
+.tracks-box-header .title h3
+{
+  font-size: 20px !important
+}
+.btn-row
+{
+  margin-left: 15px
+}
+.select-sort-row
+{
+  margin-bottom: 10%
+}
+.select-sort-row .sort-by
+{
+  float: right
+}
+.select-sort-row .select2-container
+{
+  width: 100px !important
+}
+@media (max-width: 992px)
+{
+  .select-sort-row .select2-container
+  {
+    position: relative;
+    top: -2px
+  }
+}
+
+/* Tracks Box Item */
+
+.tracks-box-item-header
+{
+  margin-top: 70px
+}
+.tracks-box-item-header-address
+{
+  padding: 0 2px
+}
+.tracks-box-item-header .app-checkbox label
+{
+  font-size: 16px;
+  font-weight: 700
+}
+.tracks-box-item-header-btn button
+{
+  float: right;
+  margin-left: 3px;
+  padding: 5px 10px
+}
+.tracks-box-item-header-btn button.btn span[class^='icon-']
+{
+  margin: 0
+}
+#shared-url-btn-open-lock
+{
+  display: block;
+  float: right
+}
+.tracks-item-header-title-date
+{
+  font-size: 16px;
+  font-weight: 700
+}
+.tracks-item-header-title-time
+{
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff7c3a
+}
+.tracks-item-header-title-public
+{
+  font-size: 16px;
+  font-weight: 700;
+  color: #016988;
+  display: none
+}
+.tracks-box-item-header-address .app-checkbox:hover .tracks-item-header-title-time,
+.tracks-box-item-header-address .app-checkbox:hover .tracks-item-header-title-public
+{
+  color: #003e5b
+}
+.tracks-box-item-header-address .app-checkbox .tracks-item-header-title-date,
+.tracks-box-item-header-address .app-checkbox .tracks-item-header-title-time,
+.tracks-box-item-header-address .app-checkbox .tracks-item-header-title-public
+{
+  margin-right: 5px
+}
+#shared-url {
+  background: #F5F5F5;
+  padding: 15px 20px;
+  display: none
+}
+.tracks-box-item-header-vehicle-info
+{
+  padding: 0 17px;
+  float: left
+}
+.tracks-box-item-header-vehicle-info .vehicle-color
+{
+  float: left
+}
+.tracks-box-item-header-vehicle-info .vehicle-color span
+{
+  margin-left: 1px;
+  color: red
+}
+.tracks-box-item-header-vehicle-info .car-blue-color span
+{
+  color: blue
+}
+.tracks-box-item-header-vehicle-info .car-green-color span
+{
+  color: green
+}
+.tracks-box-item-header-vehicle-info  .label.label-personal
+{
+  background-color: #003e5b;
+  color: #fff
+}
+.tracks-box-item-header-vehicle-info  .label.label-business
+{
+  background-color: #ee4901;
+  color: #fff
+}
+.tracks-box-item-header .block-divider
+{
+  width: 94% !important;
+  margin-left: 3%
+}
+.item-content-user-info span
+{
+  font-size: 18px;
+  margin-left: 4px
+}
+h2.item-content-start-stop-time,
+h2.item-content-start-stop-location
+{
+  float: left;
+  width: auto
+}
+.item-content-start,
+.item-content-stop
+{
+  padding: 0
+}
+.fa.item-content-start-stop-time-icon,
+.fa.item-content-start-stop-location-icon,
+.fa.item-content-start-icon,
+.fa.item-content-stop-icon
+{
+  line-height: inherit
+}
+.item-content-start-stop-icon
+{
+  position: relative;
+  top: 5px;
+  width: auto;
+  padding-right: 0
+}
+.fa.item-content-start-icon
+{
+  color: #ee4901
+}
+.fa.item-content-stop-icon
+{
+  color: #003e5b
+}
+.tracks-box-item-footer-info .app-heading
+{
+  padding: 0 15px
+}
+.tracks-box-item-footer-info .title
+{
+  padding: 0 5px;
+  margin-bottom: 5%
+}
+.tracks-box-item-footer-info .title p
+{
+  font-size: 11px
+}
+.tracks-box-item-footer-info .title h3
+{
+  font-size: 11px
+}
+
+
+/***** Geofences Page *****/
+
+.geofences-filter .panel-info > .panel-heading
+{
+  color: #FFF;
+  background-color: #4FB5DD;
+  border-color: #4FB5DD;
+  line-height: normal
+}
+.geofences-filter .block .filter-item .app-heading .icon
+{
+  margin-right: 5px
+}
+.geofences-filter .block .filter-item .app-heading .icon span
+{
+  font-size: 14px
+}
+.app .block.block-condensed > .block-content.geofences-table
+{
+  padding: 0 17px
+}
+.geofences-table .app-heading.title-only
+{
+  padding: 0
+}
+.geofences-table .app-heading.title-only .icon
+{
+  margin-right: 5px;
+  width: auto
+}
+.geofences-table .app-heading.title-only .icon span
+{
+  font-size: 14px
+}
+.table-head-th-custome-width
+{
+  width: 85px
+}
+.geofences-table-td-btn
+{
+  width: 120px
+}
+
+/***** Login & Register & Forgot Password & Reset Password & Activate Email Pages *****/
+
+.app .app-login-box
+{
+  margin-top: 20px
+}
+.login.app .app-header.app-header-design-default
+{
+  border-bottom: 1px solid #DBE0E4;
+  background-color: #fff;
+  height: 80px
+}
+.login.app .app-header.app-header-design-default .app-header-logo
+{
+  background-image: url(../img/logo-small-height.png);
+  margin-top: 3px
+}
+.login.app .app-header .app-header-logo.app-header-logo-condensed
+{
+  width: 300px
+}
+@media (max-width: 795px) {
+  .app-container .app-login-box {
+    margin-bottom: 20%
+  }
+}
+@media (max-width: 480px) {
+  .app-container .app-login-box {
+    margin-bottom: 30%
+  }
+}
+@media (max-width: 360px) {
+  .app .app-login-box {
+    width: auto
+  }
+  .app-container .app-login-box {
+    margin-bottom: 50%
+  }
+}
+
+/***** Check Email Pages *****/
+
+.app-login-box.mail-confirm-page
+{
+  width: 600px !important
+}
+@media (max-width: 360px) {
+  .app-login-box.mail-confirm-page
+  {
+    width: 100% !important
+  }
+}
+
+/***** Billing Details Page *****/
+
+.billing-details-form-btn
+{
+  float: right;
+  padding: 15px
+}
+
+/***** Plans Page *****/
+
+#prices-table-plans
+{
+  display: none;
+}
+.table-price-list-option
+{
+  visibility: hidden
+}
+.app .table.table-head-custom > thead > tr > th.individual-plan-table-heaser
+{
+  background: #016988
+}
+.app .table.table-head-custom > thead > tr > th.business-plan-table-heaser
+{
+  background: #003e5b
+}
+.app .table.table-bordered.prices-table-plans > tbody > tr > td
+{
+  text-align: center
+}
+.app .table.table-bordered.prices-table-plans > tbody > tr > td:first-child
+{
+  text-align: left
+}
+
+/***** Invoices Page *****/
+
+/***** Settings Pages *****/
+
+.settings-tab
+{
+  padding-right: 15px;
+  padding-left: 15px
+}
+@media (max-width: 992px)
+{
+  .settings-second-part
+  {
+    padding-left: 0
+  }
+}
+.title.sub-user-block-list-title h5
+{
+  font-weight: normal !important
+}
+.title.sub-user-block-list-title h5 .fa
+{
+  line-height: 18px
+}
+@media (max-width: 480px)
+{
+  .account-setting-first-name,
+  .account-setting-phone-code
+  {
+    padding-left: 0 !important;
+    padding-right: 5px !important
+  }
+  .account-setting-last-name,
+  .account-setting-phone-number
+  {
+    padding-left: 5px !important;
+    padding-right: 0 !important
+  }
+}
+#modal-default-header span
+{
+  line-height: 30px
+}
+
+/* Add New Sub-user Tab */
+
+#custom-permissions-list{
+  display: none
+}
+
+/***** Plan Order Page *****/
+
+/***** Individual Plan Page *****/
+
+.ms-container .ms-selectable li.ms-hover,
+.ms-container .ms-selection li.ms-hover
+{
+  background-color: rgba(255,124,58,0.2)
+}
+
+/***** Order Summary Page *****/
+
+.order-summary-invoice
+{
+  border: none !important
+}
+.order-summary-invoice .table.table-summery > tbody > tr > td
+{
+  border-top: none
+}
+
+/***** Plan Detail Page *****/
+
+.plan-detail-container
+{
+  padding: 0 !important
+}
+.plan-detail-container .bg-highlight
+{
+  height: 150px
+}
+.plan-detail-container-vehicles
+{
+  padding: 0 10px !important
+}
+@media (max-width: 768px)
+{
+  .plan-detail-container-summery-bg
+  {
+    margin-left: 0 !important
+  }
+}
+
+/***** Vehicles Page *****/
+
+.color-vehicles-in-table svg
+{
+  border: 1px solid #d3d3d3
+}
+.vehicle-details-marker
+{
+  color: #ee4901;
+  font-size: 20px
+}
+
+#edit-car-vehicle-modal .help-block.form-error,
+#edit-other-vehicle-modal .help-block.form-error
+{
+  margin-left: 15px
+}
+
+/***** Add Car Vehicle Page *****/
+
+#add-car-vehicle-page form .form-group span.help-block.form-error
+{
+  margin-left: 15px
+}
+#select-marker .btn.btn-default span[class^="icon-"],
+#select-marker .btn.btn-default .fa,
+#select-marker .dropdown-menu > li > a
+{
+  color: #ee4901;
+  font-size: 20px
+}
+#select-marker .dropdown-menu > li .fa
+{
+  font-size: 20px
+}
+
+/***** Vehicle Details Page *****/
+
+.title-icon-details-pages .fa
+{
+  line-height: 20px;
+  font-size: 20px
+}
+
+/***** Add New Driver Page *****/
+
+.dropify-wrapper
+{
+  width: 210px
+}
+.upload-profile-image-icon
+{
+  font-size: 50px;
+  color: #ee4901
+}
+.dropify-wrapper
+{
+  border: 1px solid #E5E5E5;
+}
+.dropify-wrapper~.dropify-errors-container ul li
+{
+  font-weight: normal
+}
+.working-hours-items
+{
+  display: none
+}
+
+/***** Groups Send Notification Page *****/
+
+#send-notification-form .help-block.form-error
+{
+  margin-left: 15px
+}
+#send-notification-form .sms-progrssbar
+{
+  display: none
+}
+@media (max-width: 767px)
+{
+  #sms-radio-choice .sms-progrssbar
+  {
+    margin-top: 10px
+  }
+}
+@media (max-width: 480px)
+{
+  #sms-radio-choice .sms-noti-label
+  {
+    padding: 0 !important
+  }
+  #sms-radio-choice .sms-progrssbar-section
+  {
+    padding: 0 !important;
+    margin-top: 0 !important
+  }
+  #sms-radio-choice .sms-progrssbar-section .sms-progrssbar,
+  #sms-radio-choice .sms-progrssbar
+  {
+    padding: 0 !important
+  }
+}
+
+/***** Live Tracking Page *****/
+
+#show-advanced-filter,
+#show-advanced-filter .filter-item
+{
+  display: none
+}
+
+/***** Add New Geofence Page *****/
+
+.help-block.form-error
+{
+  margin-left: 15px
+}
+
+/***** Alerts Page *****/
+
+.alerts-table p.subheader
+{
+  font-size: 10px !important
+}
+
+/***** Add New Alert Page *****/
+
+.location-info .title
+{
+  width: 100%
+}
+.location-info .title p span
+{
+  color: #454545;
+  font-size: 13px;
+  line-height: 15px
+}
+.title-only.title-h2 .title h2
+{
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 600
+}
+#alert-details
+{
+  display: none
+}
+
+/***** Weekly Report Details Page *****/
+
+.report-details .title
+{
+  width: 100%
+}
+.report-details .title p span
+{
+  color: #454545;
+  font-size: 13px;
+  line-height: 15px
+}
+
+/***** Driver Verification Page *****/
+
+.driver-verification-table img.driver-table-img:hover
+{
+  cursor: pointer
+}
